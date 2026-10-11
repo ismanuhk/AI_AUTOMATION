@@ -1,4 +1,9 @@
 # AI Test Case Generator Agent
+
+## Architecture
+
+See the [Architecture Diagram](docs/architecture.md) for the complete project workflow.
+
 ## Project Screenshots
 
 ### Playwright Test Report
