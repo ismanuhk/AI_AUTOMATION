@@ -17,3 +17,9 @@ __pycache__/
 # IDE files
 .vscode/
 .idea/
+
+# Generated test artifacts
+output/reports/
+output/screenshots/
+output/test_cases.json
+output/test_cases.xlsx
