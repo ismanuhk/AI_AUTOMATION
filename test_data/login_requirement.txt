@@ -1,0 +1,21 @@
+﻿Requirement ID: REQ001
+
+As a customer,
+I want to log in using my email and password,
+so that I can access my account.
+
+Acceptance Criteria:
+
+1. Valid email and password should open the Dashboard.
+2. An unregistered email should display "Invalid email".
+3. An incorrect password should display "Invalid password".
+4. Empty email and password should display
+   "Email and password are required".
+5. Empty email with a valid password should display
+   "Email is required".
+6. Valid email with an empty password should display
+   "Password is required".
+7. An email with an invalid format should display
+   "Invalid email format".
+8. Email and password containing only spaces should be handled
+   according to the application's validation rules.

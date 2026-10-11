@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+
+    <h1>Login</h1>
+
+    <form id="login-form" novalidate>
+
+        <label for="email">Email</label>
+        <input id="email" type="text" autocomplete="username">
+
+        <br><br>
+
+        <label for="password">Password</label>
+        <input id="password" type="password" autocomplete="current-password">
+
+        <br><br>
+
+        <button type="submit">Login</button>
+
+        <p id="error" role="alert"></p>
+
+    </form>
+
+    <script>
+        document
+            .getElementById("login-form")
+            .addEventListener("submit", function(event) {
+
+                event.preventDefault();
+
+                const email = document.getElementById("email").value.trim();
+                const password = document.getElementById("password").value;
+                const error = document.getElementById("error");
+
+                error.textContent = "";
+
+                if (!email && !password) {
+                    error.textContent =
+                        "Email and password are required";
+                    return;
+                }
+
+                if (!email) {
+                    error.textContent = "Email is required";
+                    return;
+                }
+
+                if (!password) {
+                    error.textContent = "Password is required";
+                    return;
+                }
+
+                const emailPattern =
+                    /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+                if (!emailPattern.test(email)) {
+                    error.textContent = "Invalid email format";
+                    return;
+                }
+
+                if (email !== "user@example.com") {
+                    error.textContent = "Invalid email";
+                    return;
+                }
+
+                if (password !== "Test@123") {
+                    error.textContent = "Invalid password";
+                    return;
+                }
+
+                document.body.innerHTML = "<h1>Dashboard</h1>";
+            });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+
+======================================================================
+Generated: 2026-10-10 21:24:20
+Test: test_intentional_failure
+======================================================================
+
+Here is the analysis of the Playwright test failure:
+
+**FAILURE SUMMARY**
+The test "test_intentional_failure" failed due to an AssertionError, specifically because the assertion "assert False" was not met.
+
+**ERROR CATEGORY**
+The error category is an AssertionError, indicating that the test assertion failed.
+
+**EVIDENCE**
+The available evidence is the error message and traceback:
+```
+AssertionError: Intentional failure to test AI analysis
+assert False
+```
+There is no additional information provided about the test setup, the application being tested, or any other relevant details.
+
+**POSSIBLE ROOT CAUSE**
+The possible root cause of this failure is that the test is intentionally failing due to a design or configuration issue. The fact that the test is named "test_intentional_failure" suggests that this is an expected behavior.
+
+**RECOMMENDED FIX**
+Since this is an intentional failure, there is no recommended fix. The test is likely designed to fail under certain conditions, and the failure is expected.
+
+**PREVENTION**
+To prevent similar failures in the future, it's essential to ensure that tests are properly designed and configured to handle intentional failures. This may involve adding additional logging or monitoring to detect and report on such failures.
+
+======================================================================
+Generated: 2026-10-10 21:27:36
+Test: test_ai_report_check[chromium]
+======================================================================
+
+Here is the analysis of the Playwright test failure:
+
+**FAILURE SUMMARY**
+The test 'test_ai_report_check[chromium]' failed.
+
+**ERROR CATEGORY**
+The error category is 'AssertionError'.
+
+**EVIDENCE**
+The available evidence includes:
+
+* The test code: `page.goto("http://127.0.0.1:8000/login.html")` and `assert False, "Testing automatic AI report saving"`
+* The error message: `E       AssertionError: Testing automatic AI report saving`
+* The traceback: `output\playwright_tests\test_ai_report_check.py:5: AssertionError`
+* The warnings: `DeprecationWarning` and `UserWarning` related to the report and screenshot.
+
+**POSSIBLE ROOT CAUSE**
+The possible root cause of the failure is that the assertion `assert False, "Testing automatic AI report saving"` is incorrect and is not being met. This could be due to a variety of reasons such as the page not loading correctly, the assertion being too strict, or the test not waiting for the expected condition to be met.
+
+**RECOMMENDED FIX**
+To fix this issue, I would recommend reviewing the test code and the expected behavior of the application. It is possible that the assertion is too strict or that the test is not waiting for the expected condition to be met. I would also recommend checking the page loading and the expected behavior of the application to ensure that the assertion is correct.
+
+**PREVENTION**
+To prevent this issue in the future, I would recommend:
+
+* Reviewing the test code and the expected behavior of the application before running the tests.
+* Using more robust assertions that take into account the expected behavior of the application.
+* Adding waits to ensure that the expected condition is met before making assertions.
+* Checking the page loading and the expected behavior of the application to ensure that the assertions are correct.
+
+======================================================================
+Generated: 2026-10-10 21:29:33
+Test: test_ai_report_check[chromium]
+======================================================================
+
+Here is the analysis of the Playwright test failure:
+
+**FAILURE SUMMARY**
+The test 'test_ai_report_check[chromium]' failed.
+
+**ERROR CATEGORY**
+The error category is 'AssertionError'.
+
+**EVIDENCE**
+The available evidence includes:
+
+* The test code: `page.goto("http://127.0.0.1:8000/login.html")` and `assert False, "Testing automatic AI report saving"`
+* The error message: `E       AssertionError: Testing automatic AI report saving`
+* The traceback: `output\playwright_tests\test_ai_report_check.py:5: AssertionError`
+* The warnings: `DeprecationWarning` and `UserWarning` related to the `report.extra` attribute and self-contained HTML report.
+
+**POSSIBLE ROOT CAUSE**
+The possible root cause of the failure is that the test is asserting `False` instead of verifying the expected behavior of the application. The test is trying to test the automatic AI report saving, but the assertion is incorrect.
+
+**RECOMMENDED FIX**
+The recommended fix is to correct the assertion to verify the expected behavior of the application. For example, if the application is supposed to save the AI report automatically, the test should verify that the report is saved successfully.
+
+**PREVENTION**
+To prevent similar failures in the future, it's essential to:
+
+* Review test code regularly to ensure that assertions are correct and relevant.
+* Use meaningful and descriptive variable names and test names.
+* Use the correct assertion library and syntax.
+* Test for expected errors and exceptions.
+* Use warnings and deprecation notices to identify potential issues before they become critical.

@@ -1,0 +1,187 @@
+{
+    "total_test_cases": 8,
+    "test_cases": [
+        {
+            "test_case_id": "TC001",
+            "requirement_id": "REQ001",
+            "title": "Login with valid credentials",
+            "preconditions": [
+                "Login page is available"
+            ],
+            "test_steps": [
+                "Open the login page",
+                "Enter valid email and password",
+                "Click the login button"
+            ],
+            "test_data": [
+                "Email: user@example.com",
+                "Password: Test@123"
+            ],
+            "expected_result": "Dashboard heading is visible",
+            "priority": "High",
+            "severity": "High",
+            "test_type": "Functional",
+            "positive_negative": "Positive",
+            "automation_candidate": true
+        },
+        {
+            "test_case_id": "TC002",
+            "requirement_id": "REQ001",
+            "title": "Login with invalid email",
+            "preconditions": [
+                "Login page is available"
+            ],
+            "test_steps": [
+                "Open the login page",
+                "Enter invalid email and password",
+                "Click the login button"
+            ],
+            "test_data": [
+                "Email: wrong@example.com",
+                "Password: InvalidPassword"
+            ],
+            "expected_result": "Invalid email",
+            "priority": "High",
+            "severity": "Medium",
+            "test_type": "Functional",
+            "positive_negative": "Negative",
+            "automation_candidate": true
+        },
+        {
+            "test_case_id": "TC003",
+            "requirement_id": "REQ001",
+            "title": "Login with invalid password",
+            "preconditions": [
+                "Login page is available"
+            ],
+            "test_steps": [
+                "Open the login page",
+                "Enter valid email and invalid password",
+                "Click the login button"
+            ],
+            "test_data": [
+                "Email: user@example.com",
+                "Password: InvalidPassword"
+            ],
+            "expected_result": "Invalid password",
+            "priority": "High",
+            "severity": "Medium",
+            "test_type": "Functional",
+            "positive_negative": "Negative",
+            "automation_candidate": true
+        },
+        {
+            "test_case_id": "TC004",
+            "requirement_id": "REQ001",
+            "title": "Login with both fields empty",
+            "preconditions": [
+                "Login page is available"
+            ],
+            "test_steps": [
+                "Open the login page",
+                "Click the login button"
+            ],
+            "test_data": [
+                "Email: ",
+                "Password: "
+            ],
+            "expected_result": "Email and password are required",
+            "priority": "Medium",
+            "severity": "Low",
+            "test_type": "Functional",
+            "positive_negative": "Negative",
+            "automation_candidate": true
+        },
+        {
+            "test_case_id": "TC005",
+            "requirement_id": "REQ001",
+            "title": "Login with empty email",
+            "preconditions": [
+                "Login page is available"
+            ],
+            "test_steps": [
+                "Open the login page",
+                "Enter empty email and password",
+                "Click the login button"
+            ],
+            "test_data": [
+                "Email: ",
+                "Password: Test@123"
+            ],
+            "expected_result": "Email is required",
+            "priority": "Medium",
+            "severity": "Low",
+            "test_type": "Functional",
+            "positive_negative": "Negative",
+            "automation_candidate": true
+        },
+        {
+            "test_case_id": "TC006",
+            "requirement_id": "REQ001",
+            "title": "Login with empty password",
+            "preconditions": [
+                "Login page is available"
+            ],
+            "test_steps": [
+                "Open the login page",
+                "Enter valid email and empty password",
+                "Click the login button"
+            ],
+            "test_data": [
+                "Email: user@example.com",
+                "Password: "
+            ],
+            "expected_result": "Password is required",
+            "priority": "Medium",
+            "severity": "Low",
+            "test_type": "Functional",
+            "positive_negative": "Negative",
+            "automation_candidate": true
+        },
+        {
+            "test_case_id": "TC007",
+            "requirement_id": "REQ001",
+            "title": "Login with invalid email format",
+            "preconditions": [
+                "Login page is available"
+            ],
+            "test_steps": [
+                "Open the login page",
+                "Enter invalid email and password",
+                "Click the login button"
+            ],
+            "test_data": [
+                "Email: manu@",
+                "Password: Test@123"
+            ],
+            "expected_result": "Invalid email format",
+            "priority": "Medium",
+            "severity": "Low",
+            "test_type": "Functional",
+            "positive_negative": "Negative",
+            "automation_candidate": true
+        },
+        {
+            "test_case_id": "TC008",
+            "requirement_id": "REQ001",
+            "title": "Login with whitespace-only fields",
+            "preconditions": [
+                "Login page is available"
+            ],
+            "test_steps": [
+                "Open the login page",
+                "Enter whitespace-only fields and click the login button"
+            ],
+            "test_data": [
+                "Email: ",
+                "Password: "
+            ],
+            "expected_result": "Email is required",
+            "priority": "Low",
+            "severity": "Low",
+            "test_type": "Functional",
+            "positive_negative": "Negative",
+            "automation_candidate": true
+        }
+    ]
+}
