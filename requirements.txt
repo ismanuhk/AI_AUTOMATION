@@ -1,0 +1,8 @@
+langchain-ollama
+pydantic
+pandas
+openpyxl
+pytest
+pytest-html
+pytest-playwright
+playwright
